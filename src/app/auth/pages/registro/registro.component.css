@@ -1,0 +1,54 @@
+.form {
+  background-color: #e0f2f1;
+  width: 400px;
+  border-radius: 30px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 70px;
+  margin-bottom: 50px;
+}
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+
+.title{
+  margin-bottom: 0px;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+.signupFrm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.form-control{
+  background-color: #aebfbe ;
+  border: solid #000000;
+  border-width: 0.5px;
+  border-radius: 50px;
+}
+
+.container button{
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  border-radius: 30px;
+
+}
+.contenedorPrincipal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  bottom: 0px;
+  top: 0px;
+}

@@ -1,0 +1,75 @@
+<div   >
+    <video  autoplay="true" muted="true" loop="true" id="video_background" preload="auto" >
+       
+        <source src="../../../assets/Imagenes/Plexus.mp4" type="video/mp4" />
+    </video>
+    <div class="d-flex justify-content-start mt-5" style="margin-left: 40px ;">
+        <h1 class="animate__animated animate__slideInUp animate__delay-1s ">Bienvenidos a REPOST</h1>
+    </div>
+
+    <div  class="container d-flex justify-content-center " id="crearRep">
+        <div class="margenPointer">
+            <div class="input-group mb-3">
+                <input type="text" 
+                        class="form-control" 
+                         placeholder="Ingresa el nombre de tu nuevo repositorio" 
+                         [(ngModel)]="nuevoRepo"
+                         (ngModelChange)="onChangeNuevoRp($event)" >
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" id="btnCrear" type="button"
+                  (click)="crearNuevoRep($event)" [disabled]="cambio">Crear</button>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-5">
+        <!-- <button mat-raised-button color="primary">Subir Archivo</button> -->
+        <button type="button" class="btn btn-primary " (click)="modal.open(modalContent)">Subir Archivo</button>
+    </div>
+
+    
+
+    <div class="container mt-5 d-flex justify-content-center" id="contieneInfo">
+
+        <div style="background-color: #282A3A;" class="col ">
+            <code class="getStart d-flex justify-content-center">
+                Start by downloading and installing on your computer.
+            </code><br><br>
+
+            <code class="d-flex justify-content-center getStart">Upload your file</code>
+        </div>
+
+    </div>
+
+    <div class="MostrarEvento">
+        <ng-template #modalContent let-close="close" class="MostrarEvento">
+          <div class="modal-header">
+      
+            <h2 class="d-flex justify-content-center">Nuevo Documento</h2>
+            
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-center mt-3">
+                <input type="file" (change)="subirArchivo($event)" multiple="true">
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-warning mt-5 ">Aceptar</button>
+            </div>
+            
+          </div>
+      
+          <div class="modal-footer d-flex">
+      
+            <div class="d-flex justify-content-end">
+              <button type="button" class="btn btn-outline-danger" (click)="close()">
+                OK
+              </button>
+            </div>
+      
+          </div>
+      
+        </ng-template>
+      </div>
+
+</div>

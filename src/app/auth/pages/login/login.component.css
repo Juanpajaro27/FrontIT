@@ -1,0 +1,29 @@
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 450px;
+  border-radius: 30px;
+  backdrop-filter: blur(2px);
+}
+
+.form h3{
+  align-items: center;
+  font-size: 40px;
+}
+
+.logoUser{
+  width: 70px;
+  height: 70px;
+}
+
+.container{
+  background-image: url("/assets/Imagenes/cloud-dark.svg") ;
+
+}
+
+
